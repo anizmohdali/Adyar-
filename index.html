@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adyar Garden – Premium Event Venue, Mangalore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* FIX 1: Video was upside-down — 270deg corrects it */
+    .hero-video-wrap video { transform: rotate(270deg) scale(1.78) !important; }
+    /* FIX 2: Remove the scroll indicator in the middle of hero */
+    .hero-scroll { display: none !important; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="aaddf.png" alt="Adyar Garden Logo" />
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="venues.html">Venues</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Event</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="hero-video-wrap">
+      <video autoplay muted loop playsinline preload="auto" id="heroVideo">
+        <source src="ad888.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tagline reveal-up">Mangalore's Finest Event Destination</p>
+      <h1 class="hero-title reveal-up" style="--delay:.15s">
+        Your One Stop<br /><em>Banquet</em> for<br />All Occasions
+      </h1>
+      <p class="hero-sub reveal-up" style="--delay:.2s">
+        A beautiful destination with world-class facilities —<br />
+        enter in awe, leave with a memory to cherish forever.
+      </p>
+      <div class="hero-actions reveal-up" style="--delay:.45s">
+        <a href="contact.html" class="btn-primary">Book Your Event</a>
+        <a href="venues.html" class="btn-ghost">Explore Venues</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stat-item">
+        <span class="stat-num" data-target="4">0</span><span class="stat-suffix">+</span>
+        <p>Years of Hosting</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="500">0</span><span class="stat-suffix">+</span>
+        <p>Occasions Hosted</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num" data-target="400">0</span><span class="stat-suffix">+</span>
+        <p>Happy Families</p>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item">
+        <span class="stat-num">24</span><span class="stat-suffix">/7</span>
+        <p>Support Available</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pillars-section section-pad">
+    <div class="container">
+      <div class="section-label">Why Choose Us</div>
+      <h2 class="section-title">Welcome to <em>Excellence</em></h2>
+      <div class="pillars-grid">
+        <div class="pillar-card scroll-reveal">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="6" y="18" width="36" height="24" rx="2"/><path d="M2 18h44M16 18V10a8 8 0 0 1 16 0v8"/>
+            </svg>
+          </div>
+          <h3>World-Class Facilities</h3>
+          <p>State-of-the-art infrastructure with modern amenities designed to elevate every event.</p>
+        </div>
+        <div class="pillar-card scroll-reveal" style="--sr-delay:.12s">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="16" cy="16" r="7"/><circle cx="32" cy="16" r="7"/><path d="M2 40c0-8 6-14 14-14h16c8 0 14 6 14 14"/>
+            </svg>
+          </div>
+          <h3>Expert Team</h3>
+          <p>Dedicated professionals committed to flawless execution of every detail.</p>
+        </div>
+        <div class="pillar-card scroll-reveal" style="--sr-delay:.24s">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 4C15.16 4 8 11.16 8 20c0 12 16 24 16 24s16-12 16-24c0-8.84-7.16-16-16-16z"/><circle cx="24" cy="20" r="5"/>
+            </svg>
+          </div>
+          <h3>Perfect Location</h3>
+          <p>Centrally located on NH-75, Mangalore — easily accessible for all your guests.</p>
+        </div>
+        <div class="pillar-card scroll-reveal" style="--sr-delay:.36s">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 4l5.09 10.26L42 16.18l-9 8.77 2.12 12.37L24 31.77l-11.12 5.55L15 24.95 6 16.18l12.91-1.92z"/>
+            </svg>
+          </div>
+          <h3>Premium Experience</h3>
+          <p>Every event is crafted with precision — a memory you and your guests will cherish forever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="venues-preview section-pad dark-section">
+    <div class="container">
+      <div class="section-label light">Our Spaces</div>
+      <h2 class="section-title light">Iconic <em>Venues</em></h2>
+      <div class="venues-scroll-track">
+        <div class="venue-thumb scroll-reveal">
+          <div class="venue-thumb-img" style="background-image:url('vkshetty.jpg')">
+            <div class="venue-thumb-overlay">
+              <h3>V K Shetty Auditorium</h3>
+              <p>Up to 1,200 guests</p>
+              <a href="venues.html" class="venue-thumb-link">View Details →</a>
+            </div>
+          </div>
+        </div>
+        <div class="venue-thumb scroll-reveal" style="--sr-delay:.1s">
+          <div class="venue-thumb-img" style="background-image:url('sambhrama.jpg')">
+            <div class="venue-thumb-overlay">
+              <h3>Sambhrama Hall</h3>
+              <p>Up to 500 guests</p>
+              <a href="venues.html" class="venue-thumb-link">View Details →</a>
+            </div>
+          </div>
+        </div>
+        <div class="venue-thumb scroll-reveal" style="--sr-delay:.2s">
+          <div class="venue-thumb-img" style="background-image:url('astor.jpg')">
+            <div class="venue-thumb-overlay">
+              <h3>Aster Banquets</h3>
+              <p>Up to 500 guests</p>
+              <a href="venues.html" class="venue-thumb-link">View Details →</a>
+            </div>
+          </div>
+        </div>
+        <div class="venue-thumb scroll-reveal" style="--sr-delay:.3s">
+          <div class="venue-thumb-img" style="background-image:url('garden.jpg')">
+            <div class="venue-thumb-overlay">
+              <h3>Utsav &amp; Udyaan Garden</h3>
+              <p>Up to 3,000 guests</p>
+              <a href="venues.html" class="venue-thumb-link">View Details →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <a href="venues.html" class="btn-primary">See All Venues</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-teaser section-pad">
+    <div class="container services-two-col">
+      <div class="services-teaser-text scroll-reveal">
+        <div class="section-label">What We Offer</div>
+        <h2 class="section-title">Everything Under<br /><em>One Roof</em></h2>
+        <p>From catering to décor, AV to security — our comprehensive services ensure a seamless, stunning event every time.</p>
+        <ul class="service-list">
+          <li><span>🍽️</span> Catering &amp; Hospitality</li>
+          <li><span>🎬</span> Audio &amp; Visual Technology</li>
+          <li><span>🎨</span> Décor &amp; Styling</li>
+          <li><span>🎤</span> Event Planning &amp; Coordination</li>
+          <li><span>🏨</span> Accommodation &amp; Transport</li>
+          <li><span>🔒</span> Security &amp; Safety</li>
+        </ul>
+        <a href="services.html" class="btn-primary mt-2">View All Services</a>
+      </div>
+      <div class="services-teaser-cards scroll-reveal" style="--sr-delay:.2s">
+        <div class="mini-pkg-card">
+          <p class="pkg-tier">Basic</p>
+          <p class="pkg-price">From ₹1,50,000</p>
+          <p>Venue + AV + Catering</p>
+          <a href="contact.html" class="btn-outline-sm">Inquire</a>
+        </div>
+        <div class="mini-pkg-card featured-pkg">
+          <p class="pkg-badge">Most Popular</p>
+          <p class="pkg-tier">Premium</p>
+          <p class="pkg-price">From ₹3,00,000</p>
+          <p>Everything + Event Planning</p>
+          <a href="contact.html" class="btn-primary-sm">Inquire</a>
+        </div>
+        <div class="mini-pkg-card">
+          <p class="pkg-tier">Luxury</p>
+          <p class="pkg-price">From ₹5,00,000</p>
+          <p>Full-Service Experience</p>
+          <a href="contact.html" class="btn-outline-sm">Inquire</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-banner-inner">
+      <h2>Ready to Make Your Event Unforgettable?</h2>
+      <p>Let our team help you plan the perfect day</p>
+      <div class="cta-banner-btns">
+        <a href="contact.html" class="btn-primary">Book Now</a>
+        <a href="gallery.html" class="btn-ghost">View Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="location-section section-pad">
+    <div class="container">
+      <div class="section-label">Find Us</div>
+      <h2 class="section-title">Our <em>Location</em></h2>
+      <div class="location-two-col">
+        <div class="location-info scroll-reveal">
+          <div class="loc-detail">
+            <div class="loc-icon">📍</div>
+            <div>
+              <strong>Address</strong>
+              <p>Ullal, Adyar Garden, N.H.75<br />Mangalore – 575 007, Karnataka</p>
+            </div>
+          </div>
+          <div class="loc-detail">
+            <div class="loc-icon">📞</div>
+            <div>
+              <strong>Phone</strong>
+              <p>+91 63648 97836 / 97835 / 97838 / 97833<br />Tel: 0824 2276777</p>
+            </div>
+          </div>
+          <div class="loc-detail">
+            <div class="loc-icon">📧</div>
+            <div>
+              <strong>Email</strong>
+              <p>adyargarden@gmail.com</p>
+            </div>
+          </div>
+          <a href="contact.html" class="btn-primary mt-2">Get Directions &amp; Contact</a>
+        </div>
+        <div class="location-map-wrap scroll-reveal" style="--sr-delay:.2s">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.603321959998!2d74.92138647530761!3d12.868878087437148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba358ff0a2c5b4d%3A0xe80a7daff4efee68!2sAdyar%20Garden%20Rd%2C%20Adyar%2C%20Karnataka%20575007%2C%20India!5e0!3m2!1sen!2sus!4v1773212647182!5m2!1sen!2sus"
+            allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="aaddf.png" alt="Adyar Garden" class="footer-logo" />
+          <p>Mangalore's premier event destination — where every occasion becomes a timeless memory.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="venues.html">Venues</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>📍 N.H.75, Adyar, Mangalore – 575 007</p>
+          <p>📧 adyargarden@gmail.com</p>
+          <p>📞 +91 63648 97836</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/adyargarden" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.facebook.com/AdyarGarden" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.twitter.com/AdyarGarden" target="_blank" rel="noopener">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2025 Adyar Gardens Pvt Ltd. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

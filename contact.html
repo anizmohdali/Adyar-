@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact – Adyar Garden</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="aaddf.png" alt="Adyar Garden Logo" /></a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="venues.html">Venues</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active nav-cta">Book Event</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="page-header-inner">
+      <h1>Get in Touch</h1>
+      <p>Let's discuss your event and make it extraordinary</p>
+    </div>
+  </div>
+
+  <section class="contact-section section-pad">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Info Column -->
+        <div class="contact-info-col scroll-reveal">
+          <h2>Contact Information</h2>
+
+          <div class="contact-detail-card">
+            <h4>📍 Address</h4>
+            <p>Adyar Garden, opp. Sahyadri College of Engineering &amp; Management,<br />
+              Ullal, N.H.75, Mangalore – 575 007</p>
+          </div>
+
+          <div class="contact-detail-card">
+            <h4>📞 Phone</h4>
+            <p>Tel: 0824 – 2276777<br />
+              Cell: +91 63648 97836 / 97835<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+91 63648 97838 / 97833</p>
+          </div>
+
+          <div class="contact-detail-card">
+            <h4>📧 Email</h4>
+            <p>General: adyargarden@gmail.com<br />
+              Events: booking@adyargarden.com</p>
+          </div>
+
+          <div class="contact-detail-card">
+            <h4>🅿️ Parking</h4>
+            <p>Free parking for 500+ vehicles<br />24/7 Security on-site</p>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="contact-form-col scroll-reveal" style="--sr-delay:.2s">
+          <h2>Send Us a Message</h2>
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX" required />
+              </div>
+              <div class="form-group">
+                <label for="event-type">Event Type *</label>
+                <select id="event-type" name="event-type" required>
+                  <option value="">Select Event Type</option>
+                  <option>Wedding</option>
+                  <option>Reception</option>
+                  <option>Corporate Event</option>
+                  <option>Conference</option>
+                  <option>Exhibition</option>
+                  <option>Live Concert</option>
+                  <option>Workshop</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Preferred Date *</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="guests">Expected Guests *</label>
+                <input type="number" id="guests" name="guests" min="50" placeholder="e.g. 300" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="venue">Preferred Venue</label>
+              <select id="venue" name="venue">
+                <option value="">Select a Venue (optional)</option>
+                <option>V K Shetty Auditorium</option>
+                <option>Sambhrama Hall</option>
+                <option>Aster Banquets</option>
+                <option>Utsav &amp; Udyaan Garden</option>
+                <option>Vruddhi Accommodation</option>
+                <option>VK Hospitality Services</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell us about your event..." required></textarea>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="terms" name="terms" required />
+              <label for="terms">I agree to receive communications from Adyar Garden</label>
+            </div>
+            <button type="submit" class="btn-primary" style="width:100%;padding:16px;font-size:1rem;">Send Inquiry</button>
+          </form>
+          <div id="formSuccess" style="display:none;margin-top:1.5rem;padding:1.25rem;background:#e6f4ef;border-left:4px solid #093d32;border-radius:8px;color:#093d32;">
+            <strong>Thank you!</strong> We've received your inquiry and will contact you within 24 hours.
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="map-section section-pad" style="padding-top:0">
+    <div class="container">
+      <h2>Find Us On the Map</h2>
+      <div class="map-wrap">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3889.603321959998!2d74.92138647530761!3d12.868878087437148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba358ff0a2c5b4d%3A0xe80a7daff4efee68!2sAdyar%20Garden%20Rd%2C%20Adyar%2C%20Karnataka%20575007%2C%20India!5e0!3m2!1sen!2sus!4v1773212647182!5m2!1sen!2sus"
+          allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section section-pad" style="background:var(--cream)">
+    <div class="container">
+      <div class="section-label" style="text-align:center">Common Questions</div>
+      <h2 class="section-title" style="text-align:center">Frequently Asked <em>Questions</em></h2>
+      <div class="faq-grid">
+        <div class="faq-card scroll-reveal">
+          <h4>What is the capacity of your largest venue?</h4>
+          <p>Our Utsav &amp; Udyaan Garden can accommodate up to 3,000 guests, ideal for large-scale events.</p>
+        </div>
+        <div class="faq-card scroll-reveal" style="--sr-delay:.1s">
+          <h4>Do you provide catering services?</h4>
+          <p>Yes, we offer full-service catering with customisable menus featuring local and international cuisine.</p>
+        </div>
+        <div class="faq-card scroll-reveal" style="--sr-delay:.2s">
+          <h4>Is parking available?</h4>
+          <p>We provide free parking for 500+ vehicles with 24/7 security throughout the event.</p>
+        </div>
+        <div class="faq-card scroll-reveal">
+          <h4>What technical support do you offer?</h4>
+          <p>State-of-the-art AV equipment, sound systems, projectors, and dedicated technical support teams.</p>
+        </div>
+        <div class="faq-card scroll-reveal" style="--sr-delay:.1s">
+          <h4>How far in advance should I book?</h4>
+          <p>We recommend 2–3 months for major events, though we can accommodate last-minute requests.</p>
+        </div>
+        <div class="faq-card scroll-reveal" style="--sr-delay:.2s">
+          <h4>Do you offer event planning services?</h4>
+          <p>Absolutely — our professional planning team can manage every aspect of your event from concept to close.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="aaddf.png" alt="Adyar Garden" class="footer-logo" />
+          <p>Mangalore's premier event destination — where every occasion becomes a timeless memory.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="venues.html">Venues</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>📍 N.H.75, Adyar, Mangalore – 575 007</p>
+          <p>📧 adyargarden@gmail.com</p>
+          <p>📞 +91 63648 97836</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/adyargarden" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.facebook.com/AdyarGarden" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.twitter.com/AdyarGarden" target="_blank" rel="noopener">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p>© 2025 Adyar Gardens Pvt Ltd. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('formSuccess').style.display = 'block';
+      e.target.reset();
+      e.target.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  </script>
+</body>
+</html>

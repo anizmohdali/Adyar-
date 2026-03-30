@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery – Adyar Garden</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar scrolled" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="aaddf.png" alt="Adyar Garden Logo" /></a>
+      <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="venues.html">Venues</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html" class="nav-cta">Book Event</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="page-header-inner">
+      <h1>Event Gallery</h1>
+      <p>Explore moments from our most memorable occasions</p>
+    </div>
+  </div>
+
+  <section class="gallery-section section-pad">
+    <div class="container">
+
+      <div class="gallery-filter">
+        <button class="filter-btn active" onclick="filterGallery('all')">All</button>
+        <button class="filter-btn" onclick="filterGallery('decoration')">Decoration</button>
+        <button class="filter-btn" onclick="filterGallery('mehendi')">Mehendi</button>
+        <button class="filter-btn" onclick="filterGallery('wedding')">Wedding</button>
+        <button class="filter-btn" onclick="filterGallery('reception')">Reception</button>
+        <button class="filter-btn" onclick="filterGallery('live concerts')">Live Concerts</button>
+        <button class="filter-btn" onclick="filterGallery('exhibition')">Exhibition</button>
+      </div>
+
+      <div class="gallery-grid">
+
+        <!-- DECORATION -->
+        <div class="gallery-item" data-category="decoration">
+          <img src="dec1.jpg" alt="Decoration" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="decoration">
+          <img src="dec2.jpg" alt="Decoration" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="decoration">
+          <img src="dec3.jpg" alt="Decoration" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="decoration">
+          <img src="dec4.jpg" alt="Decoration" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+
+        <!-- MEHENDI -->
+        <div class="gallery-item" data-category="mehendi">
+          <img src="meh1.jpg" alt="Mehendi" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="mehendi">
+          <img src="meh2.jpg" alt="Mehendi" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="mehendi">
+          <img src="meh3.jpg" alt="Mehendi" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+
+        <!-- WEDDING -->
+        <div class="gallery-item" data-category="wedding">
+          <img src="wed1.jpg" alt="Wedding" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="wedding">
+          <img src="wed2.jpg" alt="Wedding" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="wedding">
+          <img src="wed3.jpg" alt="Wedding" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="wedding">
+          <img src="wed4.jpg" alt="Wedding" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="wedding">
+          <img src="wed5.jpg" alt="Wedding" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+
+        <!-- RECEPTION -->
+        <div class="gallery-item" data-category="reception">
+          <img src="rec1.jpg" alt="Reception" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="reception">
+          <img src="rec2.jpg" alt="Reception" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="reception">
+          <img src="rec3.jpeg" alt="Reception" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="reception">
+          <img src="rec4.jpg" alt="Reception" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="reception">
+          <img src="rec5.jpg" alt="Reception" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+
+        <!-- LIVE CONCERTS -->
+        <div class="gallery-item" data-category="live concerts">
+          <img src="lc1.jpg" alt="Live Concert" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="live concerts">
+          <img src="lc2.jpg" alt="Live Concert" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="live concerts">
+          <img src="lc3.jpg" alt="Live Concert" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="live concerts">
+          <img src="lc4.jpg" alt="Live Concert" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="live concerts">
+          <img src="lc5.jpg" alt="Live Concert" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+
+        <!-- EXHIBITION -->
+        <div class="gallery-item" data-category="exhibition">
+          <img src="exh1.jpg" alt="Exhibition" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="exhibition">
+          <img src="exh2.jpg" alt="Exhibition" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="exhibition">
+          <img src="exh3.jpg" alt="Exhibition" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="exhibition">
+          <img src="exh4.jpg" alt="Exhibition" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item" data-category="exhibition">
+          <img src="exh5.jpg" alt="Exhibition" /><div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <img src="" alt="Gallery Image" />
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <img src="aaddf.png" alt="Adyar Garden" class="footer-logo" />
+          <p>Mangalore's premier event destination — where every occasion becomes a timeless memory.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="venues.html">Venues</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>📍 N.H.75, Adyar, Mangalore – 575 007</p>
+          <p>📧 adyargarden@gmail.com</p>
+          <p>📞 +91 63648 97836</p>
+        </div>
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <div class="footer-social">
+            <a href="https://www.instagram.com/adyargarden" target="_blank" rel="noopener">Instagram</a>
+            <a href="https://www.facebook.com/AdyarGarden" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://www.twitter.com/AdyarGarden" target="_blank" rel="noopener">Twitter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container"><p>© 2025 Adyar Gardens Pvt Ltd. All rights reserved.</p></div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
